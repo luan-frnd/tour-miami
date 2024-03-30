@@ -99,3 +99,31 @@ footer p, footer a{
     font-weight: 200;
     font-style: normal;
 }
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px; /* Ajuste de padding para telas menores */
+    }
+
+    .navbar a {
+        margin-left: 10px; /* Menos espaço entre links */
+        padding: 5px; /* Menos padding para economizar espaço */
+        font-size: 12px; /* Tamanho de fonte menor para caber mais itens */
+    }
+
+    img{
+        width: 34px;
+        height: 32px;
+    }
+    
+    h1 {
+        font-size: 24px; /* Tamanho de fonte menor para melhor leitura */
+    }
+
+    .bttn a {
+        padding: 5px 10px; /* Ajuste no padding dos botões */
+        font-size: 12px; /* Tamanho de fonte menor */
+    }
+}
+
