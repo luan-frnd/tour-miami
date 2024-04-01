@@ -94,7 +94,7 @@ footer p, footer a{
     text-align: center;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 0.1rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -124,6 +124,10 @@ footer p, footer a{
     .bttn a {
         padding: 5px 10px; /* Ajuste no padding dos botões */
         font-size: 12px; /* Tamanho de fonte menor */
+    }
+
+    footer p, footer a{
+        font-size: 0.5rem;
     }
 }
 
