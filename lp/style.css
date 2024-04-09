@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto ;
+}  
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4px;
+    position: fixed;
+    transition: .5s;
+}
+
+header.rolagem button{
+    background-color: #fff;
+    border-radius: 6% 0px 12px;
+    color: #000;
+    font-size: 1.2em;
+}
+
+header.rolagem a{
+    color: #ffffff;
+    font-style: bold;
+}
+
+header.rolagem{
+    background: #e673395f;
+    padding: 4%  4%;
+}
+
+header img{
+    width: 14%;
+    height: 12%;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #0f0f0f;
+    display:inline-block; 
+    margin:0;
+    text-transform:uppercase; 
+    text-decoration: none;
+    font-size:  1.5rem;
+}
+
+header ul li a:after{
+    display:block;
+    content: ' ';
+    border-bottom: solid 3px #000000;  
+    transform: scaleX(0);  
+    transition:  250ms ease-in-out;
+}
+
+header ul li a:hover:after {
+     transform: scaleX(1); 
+    }
+
+.btn-contact button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #4d4d4d;
+    color:#fff ;
+    cursor: pointer; 
+    transition: .2s;
+}
+
+.btn-contact button:hover{
+    transition: .8s;
+    color: #bcb9b9;
+    background-color: #000000;
+font-size: 12px;
+}
+
+section {
+    background: rgb(114,137,144);
+    background: linear-gradient(90deg, rgba(114,137,144,1) 1%, rgba(98,140,167,1) 24%, rgba(56,181,205,1) 95%);
+    padding: 50px 0;
+    height: 100vh;
+    text-align: center;
+    padding-left: 115px;
+    padding-right: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+em{
+    color: black;
+    font-weight: bold;
+    border-bottom:  black 0.2rem solid ;
+}
+
+.text p {
+    margin-left: 15px;
+    margin-top: 30px;
+    color: #4d4d4d;
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+   flex-direction: row;
+   text-align: start;
+   line-height: 15.4px;
+   font-size: 15px;
+}
+    
+
+.sec img{
+    margin-top: 10%;
+    width: 595px;
+    height: 538px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+display: flex;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+-webkit-overflow-scrolling: touch;
+
+}
+
+.carousel img {
+scroll-snap-align: start;
+width: 100%;
+max-width: 300px;
+height: auto;
+}
+
+
+.footer{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(53, 63, 67) 1%, rgb(36, 80, 107) 24%, rgb(81, 132, 143) 95%);
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a{
+    text-decoration: none;
+    padding: 1em;
+    background-color: rgb(119, 119, 119);
+    margin: 10px;
+    border-radius: 40%;
+}
+
+.socialicons a i{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+}
+
+.socialicons a:hover{
+    background-color: #d7d6d6;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i{
+    color: rgb(0, 0, 0);
+    transition:0.5s;
+}
+
+.footernav{
+    margin: 30px 0;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-display: 1.3em;
+    opacity: 0.7;
+    transition:0.5s;
+}
+
+.footernav ul li a:hover{
+    opacity: 1;
+    border-bottom: #ededed solid 1px;
+}
+
+.footerbottom{
+    background-color: #36332f;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.footerbottom p{
+    color: white;
+    
+}
+
+/* responsividade*/
+@media ( max-width: 700px){
+    
+        .footernav ul{
+            flex-direction: column;
+        }
+
+        .footernav ul li{
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .footerbottom p{
+           font-size: 15%;
+           text-align: center;
+        }
+}
