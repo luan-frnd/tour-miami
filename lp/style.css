@@ -105,6 +105,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 h2 {
@@ -112,19 +113,16 @@ h2 {
     font-size: 2rem;
 }
 
-em{
+p{
     color: black;
     font-weight: bold;
     border-bottom:  black 0.2rem solid ;
 }
 
-.text p {
+.text h3 {
     margin-left: 15px;
     margin-top: 30px;
     color: #4d4d4d;
-    display: flex;
-    flex-wrap: wrap;
-    gap:15px;
    flex-direction: row;
    text-align: start;
    line-height: 15.4px;
@@ -229,7 +227,7 @@ height: auto;
 
 .footerbottom p{
     color: white;
-    
+    border: none;
 }
 
 /* responsividade*/
